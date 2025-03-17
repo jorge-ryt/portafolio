@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Gomez - Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script defer src="../js/slider.js"></script>
+    <script defer src="../js/components/skill-card.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="hero-title"><a href="#aboutme">Jorge Gomez</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="aboutme" class="aboutme">
+            <article>
+                <h2 class="job-title">Software Engineer</h2>
+                <p>
+                    Well-qualified Full Stack Developer, specialized on Frontend development, familiar with a wide range of programming utilities and languages.
+                    Knowledgeable of backend and frontend development requirements. Handles any part of the process with ease. Collaborative team player with excellent technical abilities offering 6 years of related experience.
+                </p>
+            </article>
+            <section class="profile">
+                <figure>
+                    <img src="../images/profile-pic.png" class="profile-pic" alt="Jorge Gomez - Software Enginner" loading="lazy"/>
+                </figure>
+            </section>
+              
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <section class="slider">
+                <div class="slider-container">
+                  <figure class="card">
+                    <img src="../images/madera-st.png" alt="ArenaEdge">
+                    <figcaption>
+                        <h3>Madera Residential</h3>
+                    </figcaption>
+                  </figure>
+                  <figure class="card">
+                    <img src="../images/morpho-st.png" alt="Card 2">
+                    <figcaption>
+                        <h3>Morpho Training</h3>
+                    </figcaption>
+                  </figure>
+                  <figure class="card">
+                    <img src="../images/scoringdeck-st.png" alt="Card 3">
+                    <figcaption>
+                        <h3>Scoringdeck</h3>
+                    </figcaption>
+                  </figure>
+                  <figure class="card">
+                    <img src="../images/arenaedge-st.png" alt="Card 4">
+                    <figcaption>
+                        <h3>ArenaEdge</h3>
+                    </figcaption>
+                  </figure>
+                  <figure class="card">
+                    <img src="../images/omni-st.png" alt="Card 5">
+                    <figcaption>
+                        <h3>Omni Taxi</h3>
+                    </figcaption>
+                  </figure>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </section>              
+        </section>
+                
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <section class="skills-container">
+                <skill-card skill="HTML" level="Expert"></skill-card>
+                <skill-card skill="CSS" level="Expert"></skill-card>
+                <skill-card skill="JavaScript" level="Expert"></skill-card>
+                <skill-card skill="TypeScript" level="Advanced"></skill-card>
+                <skill-card skill="Node" level="Intermidiate"></skill-card>
+                <skill-card skill="Vue" level="Advanced"></skill-card>
+                <skill-card skill="React Native" level="Intermidiate"></skill-card>
+                <skill-card skill=".Net" level="Beginner"></skill-card>
+                <skill-card skill="Java" level="Beginner"></skill-card>
+                <skill-card skill="MongoDB" level="Intermidiate"></skill-card>
+                <skill-card skill="SQL" level="Beginner"></skill-card>
+                <skill-card skill="Unit Testing" level="Intermidiate"></skill-card>
+                <skill-card skill="E2E Testing" level="Beginner"></skill-card>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Jorge Gomez. All rights reserved.</p>
+    </footer>
+</body>
+</html>
