@@ -1,0 +1,173 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial, sans-serif";
+  background-color: #0A0A0A;
+  color: #222;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(129, 39, 101, 0.2823529412) 5%, rgba(129, 39, 101, 0.3882352941) 15%, #0A0A0A 60%);
+}
+
+.header {
+  width: 100%;
+}
+
+.hero-title {
+  animation: fadeIn 1s ease-in-out;
+}
+.hero-title a {
+  color: white;
+  text-decoration: none;
+}
+.hero-title a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+}
+.main .send-message-title {
+  color: white;
+  text-align: center;
+}
+.main .contact-form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .contact-form form {
+  border-radius: 8px;
+  background-color: #eee;
+  width: 80%;
+  height: auto;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  grid-template-areas: "name last_name" "phone email" "address address" "send send";
+}
+.main .contact-form .form-control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main .contact-form .form-control:nth-child(1) {
+  grid-area: name;
+}
+.main .contact-form .form-control:nth-child(2) {
+  grid-area: last_name;
+}
+.main .contact-form .form-control:nth-child(3) {
+  grid-area: phone;
+}
+.main .contact-form .form-control:nth-child(4) {
+  grid-area: email;
+}
+.main .contact-form .form-control:nth-child(5) {
+  grid-area: address;
+}
+.main .contact-form .form-control span i {
+  color: #034c53;
+  margin-right: 10px;
+}
+.main .contact-form .form-control input, .main .contact-form .form-control textarea {
+  border-radius: 4px;
+  border: 2px solid #dad6d6;
+  padding: 15px;
+  width: 100%;
+}
+.main .contact-form button {
+  width: 30%;
+  margin: 0 auto;
+  grid-area: send;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  background-color: #034c53;
+  color: #fff;
+}
+.main .contact-form button:hover {
+  cursor: pointer;
+  background-color: #007074;
+}
+.main .contact-form button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main .contact-form button i {
+  color: #fff;
+}
+.main .contact-form label {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  border-top: 1px solid #f5f5f5;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 820px) {
+  .main .contact-form form {
+    padding: 10px;
+    gap: 10px;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: initial;
+  }
+  .main .contact-form .form-control:nth-child(1) {
+    grid-area: initial;
+  }
+  .main .contact-form .form-control:nth-child(2) {
+    grid-area: initial;
+  }
+  .main .contact-form .form-control:nth-child(3) {
+    grid-area: initial;
+  }
+  .main .contact-form .form-control:nth-child(4) {
+    grid-area: initial;
+  }
+  .main .contact-form .form-control:nth-child(5) {
+    grid-area: initial;
+  }
+  .main .contact-form button {
+    width: 70%;
+    grid-area: initial;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
